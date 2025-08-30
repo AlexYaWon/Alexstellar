@@ -14,7 +14,7 @@ if (
   const popup = open("about:blank", "_blank");
   if (!popup || popup.closed) {
     alert(
-      "Please allow popups for this site. Doing so will allow us to open the site in a about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
+      "BIGGIE KEAGAN ALERT: Allow site popups. Doing so will allow us to open the site in an about:blank tab and preventing this site from showing up in your history. You can turn this off in the site settings.",
     );
   } else {
     const doc = popup.document;
@@ -22,10 +22,10 @@ if (
     const style = iframe.style;
     const link = doc.createElement("link");
 
-    const name = localStorage.getItem("name") || "My Drive - Google Drive";
+    const name = localStorage.getItem("name") || "Shoutout Mrs. Abiyu";
     const icon =
       localStorage.getItem("icon") ||
-      "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+      "https://github.com/AlexYaWon/Alexstellar/blob/Ad-Free/static/assets/media/favicon/main.png";
 
     doc.title = name;
     link.rel = "icon";
@@ -172,16 +172,9 @@ document.addEventListener("DOMContentLoaded", event => {
 });
 // Splash texts
 const SplashT = [
-  "Over 8 Million Users since 2023",
-  "Fastest growing proxy server",
-  "Made by xBubbo",
-  "Check out discord.gg/interstellar :)",
-  "Thanks for using the site",
-  "Follow us on Tiktok (@useinterstellar)",
-  "Subscribe to us on YouTube (@unblocking)",
-  "Subscribe to my Youtube (@xbubbo)",
-  "Check out the settings page",
-  "Check out our Patreon (https://www.patreon.com/gointerstellar)",
+  "Stolen By Alex",
+  "If something doesn't work let me know.",
+  "V2 released, site improved and ads removed (hopefully).",
 ];
 
 let SplashI = Math.floor(Math.random() * SplashT.length);
@@ -198,19 +191,7 @@ SplashE.addEventListener("click", US);
 // Random URL
 function getRandomUrl() {
   const randomUrls = [
-    "https://kahoot.it",
-    "https://classroom.google.com",
-    "https://drive.google.com",
-    "https://google.com",
-    "https://docs.google.com",
-    "https://slides.google.com",
-    "https://www.nasa.gov",
-    "https://blooket.com",
-    "https://clever.com",
-    "https://edpuzzle.com",
-    "https://khanacademy.org",
-    "https://wikipedia.org",
-    "https://dictionary.com",
+    "about:blank",
   ];
   return randomUrls[randRange(0, randomUrls.length)];
 }
