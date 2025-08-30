@@ -254,17 +254,17 @@ function AB() {
   if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank");
     if (!popup || popup.closed) {
-      alert("Window blocked. Please allow popups for this site.");
+      alert("BIGGIE KEAGAN ALERT: Window blocked. Allow popups for this site.");
     } else {
       const doc = popup.document;
       const iframe = doc.createElement("iframe");
       const style = iframe.style;
       const link = doc.createElement("link");
 
-      const name = localStorage.getItem("name") || "My Drive - Google Drive";
+      const name = localStorage.getItem("name") || "Shoutout Mrs. Abiyu";
       const icon =
         localStorage.getItem("icon") ||
-        "https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png";
+        "https://github.com/AlexYaWon/Alexstellar/blob/Ad-Free/static/assets/media/favicon/main.png";
 
       doc.title = name;
       link.rel = "icon";
@@ -344,19 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getRandomURL() {
   const randomURLS = [
-    "https://kahoot.it",
-    "https://classroom.google.com",
-    "https://drive.google.com",
-    "https://google.com",
-    "https://docs.google.com",
-    "https://slides.google.com",
-    "https://www.nasa.gov",
-    "https://blooket.com",
-    "https://clever.com",
-    "https://edpuzzle.com",
-    "https://khanacademy.org",
-    "https://wikipedia.org",
-    "https://dictionary.com",
+    "about:blank",
   ];
   return randomURLS[randRange(0, randomURLS.length)];
 }
@@ -421,7 +409,7 @@ function importSaveData() {
           });
         }
         alert('Your save data has been imported. Please test it out.')
-        alert('If you find any issues then report it in GitHub or the Interstellar Discord.')
+        alert('If you find any issues report them to Alex.')
       } catch (error) {
         console.error('Error parsing JSON file:', error);
       }
