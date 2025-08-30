@@ -1,8 +1,8 @@
 {
   "name": "edu",
   "description": "?",
-  "repository": "https://github.com/interstellarnetwork/interstellar",
-  "logo": "https://avatars.githubusercontent.com/u/103917385",
+  "repository": "https://github.com/AlexYaWon/Alexstellar",
+  "logo": "https://img.freepik.com/premium-vector/white-letter-black-background_853558-3762.jpg",
   "keywords": ["school", "math"],
   "image": "heroku/nodejs"
 }
